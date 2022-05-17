@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD>
+<title>xjosifek@yahoo.com</title>
+</HEAD>
+
+<BODY  background="back.gif"  topmargin=0 leftmargin=0 TEXT="#000000"  LINK="#00008f" VLINK="#8F0000" ALINK="#8f0000" onLoad="startclock();">
+
+<CENTER><EM>
+<br>
+<font size=6><font color=red>Home page of Petr Jos&iacute;fek</font>
+<br>		
+<font color=green>xjosifek@yahoo.com<BR></font></EM>
+<IMG src="line.gif" width="600" height="1">
+<br> 
+<font face="Arial" color=#f00000 size=3>
+<I>Local date and time:</I></font>
+<br><br> 
+			
+<SCRIPT>
+<!--  
+// Den v tydnu
+var now = new Date();
+var dName = now.getDay() + 1;
+
+if(dName==1) Day = "Sunday";
+if(dName==2) Day = "Monday";
+if(dName==3) Day = "Tuesday";
+if(dName==4) Day = "Wendesday";
+if(dName==5) Day = "Thursday";
+if(dName==6) Day = "Friday";
+if(dName==7) Day = "Saturday";
+
+
+// String to display current day in week.
+
+   var dayInWeek =(" "
+       + Day
+       + "    "
+      
+       );
+
+// Write date to page.
+
+document.open();
+document.write("<FONT FACE=Arial,Helvetica SIZE=3> <B>"+dayInWeek+"</B></FONT>");
+
+//  -->
+</SCRIPT>
+
+<br>
+
+<SCRIPT>
+<!--  
+// Dnesni datum
+var now = new Date();
+var pyear = now.getFullYear();
+var mName = now.getMonth() + 1;
+var dayNr = ((now.getDate()<10) ? "" : "")+ now.getDate();
+var xxx = "th";
+
+if(dayNr==1) xxx="st";
+if(dayNr==2) xxx="nd";
+if(dayNr==3) xxx="rd";
+if(dayNr==21) xxx="st";
+if(dayNr==22) xxx="nd";
+if(dayNr==23) xxx="rd";
+if(dayNr==31) xxx="st";
+
+if(mName==1) Month="January";
+if(mName==2) Month="February";
+if(mName==3) Month="March";
+if(mName==4) Month="April";
+if(mName==5) Month="May";
+if(mName==6) Month="June";
+if(mName==7) Month="July";
+if(mName==8) Month="August";
+if(mName==9) Month="September";
+if(mName==10) Month="October";
+if(mName==11) Month="November";
+if(mName==12) Month="December";
+
+// String to display current date.
+
+   var todaysDate =(" "
+       + dayNr
+       + " "
+       + xxx
+       + " of "
+       + Month
+       + " "
+       + pyear
+       );
+
+// Write date to page.
+
+document.open();
+document.write("<FONT FACE=Arial,Helvetica SIZE=3> <B>"+todaysDate+"</B></FONT>");
+//  -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript Applet -------------------
+var timerID = null;
+var timerRunning = false;
+
+function stopclock ()
+      {
+	if(timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+      }
+
+function startclock ()
+      {
+	// Make sure the clock is stopped
+	stopclock();
+	showtime();
+      }
+
+function showtime () {
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = ((hours < 10) ? " " : "") + hours;
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+	document.clock.face.value = timeValue;
+	// you could replace the above with this
+	// and have a clock on the status bar:
+	// window.status = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+       }
+
+	function pushbutton1() {
+		alert("Hello my dear!");
+	}
+
+	function getname(str) {
+		alert("Hi, "+ str+"!");
+	}
+// -->
+</SCRIPT>
+
+<br><br>
+<FORM NAME="clock" onSubmit="0">
+		<DIV ALIGN=CENTER>
+<INPUT TYPE="text" NAME="face" SIZE=8 VALUE="<!--#exec cmd=" `date +%T`" echo n &gt;> </DIV></FORM>
+<br>
+<font color=red size=3>
+Happy Name Day to:
+<br><br>
+</font>
+<font color=darkblue size=5>
+
+
+
+
+
+              <script language="JavaScript">
+			<!--
+dnes = new Date();
+mesiac = dnes.getMonth()+1;
+den = dnes.getDate();
+
+kalendar1 = new Array("Amos, Genesis","Alec, Alejandra, Alejandro, Alexander, Alexandra, Alexandria, Alondra, Lex","Dan, Dana, Dania, Daniela, Daniella, Danielle, Danika, Dannika, Danny, Dayana, Daniel","Franklin, Jasmin, Jasmine, Jazmin, Jazmine, Yasmeen, Yasmin, Yasmine","Alvin, Fay, Faye","Cora, Cooper, Corey, Cory, Korey, Kory",
+						 "Imani, Josiah","Aimee, Amy, Elvis","Hunter, Kent, Maude, Nona","Jonah, Jonas, Joni, Dina","Jalen, Sandra, Sandy, Sondra",
+						 "Jack, Jacki, Jackie, Jaclyn, Jacquelin, Jacqueline, Jacquelyn, Jake","Forest, Kelsey, Kelsie, Tania, Tanya","Devan, Deven, Devin, Devon, Lorna, Lorne","Consuelo, Martin, Martina, Marty","Kirstan, Kirsten, Krista, Kristi, Kristie, Kristian, Kristin, Kristina, Kristine, Kristy",
+						 "Ben, Benjamin, Bennie, Benny, Mohammed, Muhammad, Tamika","Celeste, Celestina, Celestine, Doug, Douglas","Cyrus, Kyra","Fabian, Joy, Joyce","Agnes, Annice, Anissa, Inez, Vicente, Vince, Vincent, Vincenzo","Casey, Cassandra, Cassidy, Kasey, Kassandra, Kassidy",
+						 "Cesar, Keri, Kerri, Kerry","Tim, Timmy, Timothy, Florence","Charity, Cherie, Cheryl, Neal, Neil","Johnathan, Johnathon, Jon, Jonathan, Jonathon,Tamara","Esperanza, Nathan, Nathanael, Nathaniel","Alfonso, Alfred, Alfredo, Alonso, Alonzo, Avery, Cleo",
+						 "Ashleigh, Ashlie, Ashley, Ashlyn, Ashlynn, Ashton, Wilbert","Daphne, Ophrah, Oprah, Roosevelt","Emely, Emil, Emilee, Emilia, Emilio, Emily",
+						 "Harvey, Priscilla","Roscoe, Vanesa, Vanessa","Aidan, Aiden, Kendall, Rosario","Seth, Vera, Verena, Veronica","Ava, Braxton, Cole","Dolly, Dora, Doreen, Dorothea, Dorothy, Dorthy, Leland",
+						 "Ariel, Arielle, Arlene","Courtney, Curtis, Kurtis","Dexter, Kyla, Kyle, Kyler","Gabriel, Gabriela, Gabriele, Gabriella","Brad, Braden, Bradley, Brayden, Brooke, Brooks, Brooklyn","Abraham, Ibrahim, Yvette",
+						 "Kendra, Nelson,","Amanda, Mandy, Valentine","Jordan, Jordon, Jordyn","Elias, Elijah, Elliot, Ellis, Ida","Clark, Bianca, Blanca, Blanche","Beatrice, Beatriz, Dale",
+						 "Alta, Ron, Ronald, Ronnie","Orlando, Salma","Byron, Eleanor, Lenora, Nell","George, Georgia, Georgianne, Georgina, Gina, Jorge, Jordi","Irvin, Irving, Tatiana, Tatyanna",
+						 "Sergio, Belinda","Federico, Fred, Freddie, Freddy, Frederic, Frederick, Fredrick, Ola","Vickie, Vicky, Victor, Victoria","Clyde, Farrah",
+						 "Amber, Rod, Roderick, Rodrigo","Today is unusual day - February 29th. This happens every four years as you know. Happy Name Day to all, not listed in the Calendar with Names!",
+						 "Graciela, Laverne, Rodger, Roger","Cade, Caden, Imogene, Kaden","Duane, Hattie","Rhoda, Tyrone","Lilia, Liliana, Lillian, Lillie, Lilly, Lily, Romeo",
+						 "Omar, Yvonne","Earl, Gwendolyn","Alaina, Alan, Alana, Alanna, Allan, Allen, Lana","Edgar, Edgardo, Jolene",
+						 "Barry, Hilda","Angel, Angela, Angelia, Angelica, Angelina, Angeline, Angelique, Angelo, Angie","Greg, Gregg, Gregorio, Gregory, Griffin, Keisha","Blake, Lela",
+						 "Carson, Mildred, Virgil","Rufus, Thelma","Chance, Dallas, Lacey","Pat, Patcy, Patricia, Patrice, Patrick, Patti, Patty, Tricia, Trisha","Ed, Eddie, Eddy, Eduardo, Edward, Edwardo, Gloria","Jo, Joe, Jose, Josefina, Joseph, Josephine, Josie, Joey",
+						 "Lourdes, Zion","Daltin, Dalton, Eileen","Shannon, Ty, Tyler, Tylor","Ada, Adrian, Adriana, Adrianna, Adrien, Adrienne","Floyd, Lloyd, Ursula",
+						 "Armand, Marian, Marianne, Mario","Carter, Olive","Bradford, Gale, Payton, Peyton","Ebony, Jermaine","Lois, Willard","Alma, Woodrow",
+						 "Bethany, Homer",
+						 "April, Mack","Naomi, Noemi, Russell","Dick, Mavis, Ricardo, Richard, Rick, Rickey, Ricki, Ricky, Rikki","Drake, Magdalena, Magdalene, McKenzie, Mekenzie","Nadia, Nadine, Ryan","Hugh, Hugo, Ira, Irene, Iris",
+						 "Bonita, Joel, Kermit","Al, Albert, Alberta, Alberto, Elbert","Ismael, Rachael, Rachel, Rachelle, Raquel","Beverly, Dion, Diona, Dione, Leroy","Gillian, Jillian, Julia, Julian, Juliana, Julianna, Julianne, Julien, Juliet, Julio, Julius, Julie, Julliette","Essie, Esther, Travis",
+						 "Cheri, Nolan","Brady, Eula, Wallace","Isaiah, Candace, Candice, Candy","Carlo, Carlos, Carol, Carolyn, Carrie, Carroll, Carry, Charles, Charlie, Charlotte, Chaz, Chuck, Carolina, Caroline, Carole, Ina, Lottie, Sharla","Callie, Rodolfo, Rudolfo, Rudolph, Rudy","Orville, Tamara, Tami, Tamia, Tammie, Tammy",
+						 "Don, Donald, Donna, Donnie, Ladonna","Cinda, Cindy, Cynthia, Marcel, Marcelo, Tia","Ignacio, Riley, Rylee","Trinity, Tristan, Tristen, Tristin, Triston","Addie, Adelaine, Brandon","Dharma, Ervin, Erwin, Tara, Tarra, Taryn",
+						 "Lesley, Leslie, Lesly, Wilfred, Wilfredo","Tayler, Taylor, Yolanda","Grant, Sharon, Shari","Beulah, Chester","Dante, Leticia, Zoe, Zoey",
+						 "Anastasia, Trent, Trenton",
+						 "May, Mayte, Wyatt","Miranda, Sheldon","Brandi, Brandy, Lester","Flora, Roy,","Sabrina, Tucker","Carl, Carla, Carley, Carly, Karl, Karla, Karina",
+						 "Mona, Monica, Monique, Stewart","Kiana, Levi, Lewis","Roland, Rolando, Rollie, Matilda","Reagan, Regan, Viola, Violet","Millie, Salvador, Salvatore",
+						 "Ginger, Ross, Virginia","Fatima, Ramiro,","Israel, Sybil","Desiree, Meredith, Merrie, Zane","Branden, Brenda, Brendan, Brenden, Brendon, Brenna, Brennan","Brent, Eloise",
+						 "Aric, Eric, Erica, Erick, Ericka, Erik, Erika","Gertrude, Saul, Trudy","Bernard, Bernadette, Bernardo, Benny","Freda, Frieda, Micah","Bret, Brett, Yesenia",
+						 "Clifford, Myrtle","Jess, Jessica, Jesse, Jessie, Jessika","Morgan, Rogelio","Bernice, Zachariah, Zachary, Zachery, Zackary","Mayra, Mira, Myra, Preston","Bill, Billie, Billy, Guillermo, Minnie, Velma, Vilma, Wilhelmina, Will, Willa, William, Willie, Willis, Wilma, Wilson, Liam","Kennedy, Rosalind, Rosalinda, Spencer",
+						 "Misty, Mysta, Elwood","Doyle, Sheri, Sheril, Sherri, Sherrie, Sherry",
+						 "June, Justin, Justine, Dustin","Brock, Myrna","Ramon, Ramona, Ray, Raymond, Romona","Elma, Kevin, Kevon","Laura, Laurel, Laurie, Lora, Lorene, Loretta, Lori, Lorie, Lorraine","Makena, Stuart",
+						 "Bert, Bob, Bobbi, Bobbie, Bobby, Robert, Roberta, Roberto, Robin, Robyn, Robbie","Verna, Vernon","Colin, Colleen, Collin","Bryce, Jill","Delores, Dolores, Deloris, Lola, Percy",
+						 "Malcolm, Evelyn","Anton, Anthony, Antoine, Antoinette, Antonia, Antonie, Antonio, Toni, Tony, Tonya, Latoya","Mel, Melisa, Melissa, Melvin, Melvina, ","Wendell, Wendy","Page, Paige, Todd","Dixie, Junior","Colby, Mia, Miriam",
+						 "Rhonda, Ronda, Myron","Sherman, Valeria, Valerie","Summer, Terrance, Terrence","Bailey, Paris","Evan, Jeanette, Jeanne, Jennell, Jeannette, Jeannine, Joan, Joann, Joanna, Joanne","Deshawn, Hans, Ian, Iva, Ivan, Jan, Jean, John, Johnie, Johnny, Johnson, Juan, Juana, Juanita",
+						 "Gianna, Giovanni, Jana, Jane, Janet, Janice, Janie, Sean, Shane, Shaun, Shawn, Shawna, Sinead","Kelvin, Serena, Serina","Alex, Alexa, Alexia, Alexis, Alexus","Clay, Clayton, Muriel",
+						 "Pablo, Paola, Paul, Pete, Paula, Paulette, Paulina, Pauline, Pedro, Peter, Pierce, Pierre, Petra","Grady, Melanie, Melinda, Mindy",
+						 "Deana, Diana, Diane, Dianna, Dianne, Dean, Deanna","Bertha, Merle","Madison, Maddison, Madyson, Toby","America, Thomas, Tom, Tomas, Tomeka, Tommie, Tommy","Aileen, Javier, Xavier","Clifton, Gwen",
+						 "Livia, Oliver, Olivia, Ollie, Star, Starr","Armand, Armando, Edna, Herman","Geoffrey, Jeff, Jeffery, Jeffrey, Lou, Louie, Louis, Louise, Luella, Luis, Luisa","Arthur, Arturo, Vanda, Walter, Wanda","Joceline, Jocelyn, Joselyn, Koby","Jay, Jason, Jayla, Jayson","Guy, Margarita, Marge, Margie, Margaret, Maggie, Mamie, Marguerite, Meagan, Megan, Meghan, Peggy, Rita",
+						 "Marjorie, Otis, Otto","Debbie, Debora, Deborah, Debra, Dillon, Dylan","Jada, Jade, Jaden, Jadon, Jayden","Glen, Glenda, Glenn, Glenna, Wayne","Cameron, Camryn, Kameron, Kamryn","Lea, Leah, Lee, Winston",
+						 "Gilbert, Gilberto, Roxanne","Earnest, Ernest, Ernesto, Ernie","Lowell, Madeleine, Madeline, Madelyn","Hayden, Olga","Amaya, Amelia, Gisselle, Royce",
+						 "Coby, Jackson, Jacob, Jaime, Jakob, James, Jamie, Jim, Jimmie, Jimmy, Kobe, Santiago, Ofelia","Aine, Ana, Anais, Anika, Ann, Anna, Anne, Annette, Annie, Annika, Anita, Bart, Hanna, Hannah, Nancy, Nanette, Nanie","Eli, Celia","Calvin, Kim, Kimberle, Kimberley, Kimberly","Martha, Trevor","Enrique, Hal, Handy, Hank, Harold, Harriet, Harriett, Harrison, Harry, Henrietta, Henry",
+						 "Delbert, Carmel, Carmela, Carmen",
+						 "August, Augusto, Austin, Hope","Leo, Leola, Leon, Leona, Lionel","Malic, Marvin, Leigh","Dominic, Dominick, Domingo, Dominique","Mackenzie, Makenzie, Oscar",
+						 "Hector, Holly","Donovan, Ethel","Howard, Erma, Irma","Gary, Garret, Garrett, Garry, Gerald, Geraldine, Gerard, Gerardo, Gerry, Jarrett, Jerald","Diego, Hailey, Haley, Hallie, Haylee, Haylie, Hayley",
+						 "Gage, Shanna, Sue, Susan, Susie, Suzanne","Darin, Darla, Darlene, Darell, Darren, Darrin, Darrlyn, Darryl, Darleen","Talia, Van, Vance","Cody, Heidi, Heidy, Kody","Norma, Norman, Normadia","Leonard, Leonardo, Lenny, Phyllis",
+						 "Clinton, Daisy","Elaine, Elena, Ella, Ellen, Helen, Helena, Lamar, Lena, Nellie","Lydia, Ralph","Arabella, Gavin","Cornelius, Shelley, Shelly","Macy, Wilbur",
+						 "Felipe, Kelley, Kelli, Kellie, Kelly, Kiley, Kristen, Kylee, Kylie, Phil, Philip, Phillip","Owen, Desiree","Pearl, Perla, Perry","Sam, Samantha, Sammy, Samuel","Silvia, Sylvia, Wade","Gustavo, Vivian, Viviana",
+						 "Jeremiah, Jeremy, Jeri, Jerry","Elmer, Destinee, Destiny","Nora, Sterling",
+						 "Ethan, Opal","Linda, Lindsay, Lindsey, Linda, Lynn, Lynda, Lynne, Lynette","Horace, Dawn","Grover, Rosa, Rosalie, Rose, Roseann, Roseanne, Rosemarie, Rosemary, Rosetta, Rosie, Rosina","Regina, Trey","Ali, Alice, Alicia, Alisha, Alison, Alissa, Allison, Allyson, Alyson, Alyssa, Terrell",
+						 "Dena, Maurice, Mauricio","Maria, Mariah, Mariana, Marie, Marla, Marilyn, Mary, Marissa, Marion, Marlene, Molly, Maryann, Maureen, Noah, Polly","Conrad, Curt, Kurt, Eunice","Damian, Damien, Damion, Damon, Tiffany","Day of Rememberance");
+kalendar2 = new Array("Adela, Adele, Adeline, Boyd, Della","Fernando, Ferdinand, Siera","Elton, Hazel","Cara, Eldon, Kara","Harley, Maia, Maya, Mya","Selena, Wesley",
+						 "Lucas, Lukas, Luke, Doris, Reilly","Conner, Connie, Connor, Conor, Constance","Sofia, Sonia, Sonja, Sonya, Sophia, Sophie, Tanner","Autumn, Matt, Mathew, Matthew, Mattie","Morris, Whitney",
+						 "Santos, Tiara","Demetrius, McKenna","Carey, Cary","Edith, Ida, Moses","Heath, Marina",
+						 "Milton, Selma","Makayle, Mckayla, Micaela, Michael, Michaela, Micheal, Michelle, Miguel, Mike, Miles, Mitchell, Mickey, Mikayla, Myles","Isaac, Issac, Jerome, Lila",
+						 "Archibald, Archie, Arnaldo, Arnold, Aubrey","Melody, Ruben, Ruby","Ciara, Cierra, Jasper, Kairan, Keiron, Kiara, Kiera, Kieran, Kyran","Fannie, Frances, Francesca, Francine, Francis, Francisca, Francisco, Franco, Frank, Frankie","Everett, Winifred, Winnie","Blaine, Latasha, Natalia, Natalie, Natasha, Nathalie, Tasha",
+						 "Birgit, Bridget, Bridgett, Stone","Emanuel, Emmanuel, Immanuel, Manuel, Manuela, Manuella","Chris, Christopher, Kristopher, Mercedes","Hubert, Melia, Nina","Kira, Kirk",
+						 "Edwin, Heather, Lance, Max, Maxine, Maxwell","Caleb, Kaleb, Lula, Skylar, Skyler","Diamond, Lane, Layton","Darnell, Teresa, Teri, Terri, Terry, Tess, Tessa, Theresa, Therese, Tracey, Traci, Tracie, Tracy","Kailey, Kayla, Kaylee, Monte, Monty",
+						 "Chasity, Chastity, Nia, Warren","Delia, Della, Marshall","Christian, Christiane, Christie, Christina, Christine, Christy, Cristian, Cristina, Cristobal, Tiana, Tianna, Tina","Cleveland, Effie","Craig, Cristal, Crystal, Kristal, Krystal","Derek, Derrick, Faith",
+						 "Humberto, Kala, Sadie, Sallie, Sally, Sarah, Sarra, Sarina","Marc, Marcela, Marcelino, Marcella, Marcia, Marco, Marcos, Marcus, Marcy, Marlon, Mark, Markus, Marsha","Colton, Bonnie","Camille, Randal, Randall, Randollph, Randi, Randy, Raul","Dee, Theodore, Ted, Teddy","Reginald, Reynaldo, Reynold, Stacey, Staci, Stacie, Stacy",
+						 "Clair, Clara, Clarence, Clarice, Clarissa","Herbert, Heriberto, Simon, Simone","Audra, Audrey, Audrie, Audry, Landon",
+						 "Denise, Dennis, Dwight, Sidney, Sydney","Bella, Mason, Shelby","Rafael, Mabel, Mable, Mae","Estella, Estelle, Solomon","Chad, Chase, Chelsea, Chelsey","Breana, Breanna, Brian, Briana, Brianna, Brianne, Bryan, Bryana, Bryanna, Bryant",
+						 "Rena, Rene, Renea, Renee","Logan, Stella","Rocco, Rochelle, Rocky","Nettie, Raven, Reuben, Tabitha","Etta, Quentin, Quincy, Quinton","Jewel, Jewell, Lyle",
+						 "Mallory, Stan, Stanley","Lara, Larissa, Larry, Lauren, Laurence, Lauryn, Lawrence, Loren, Lorena, Lorenzo","Benito, Delaney, Shirley","Adolfo, Grace, Gracie","Claude, Claudia, Claudette, Clint, Gladys","Eugene, Eugenia, Gene",
+						 "Alton, Bessie, Beth, Betty, Elisa, Elise, Elissa, Eliza, Elizabeth, Elsie, Isabell, Isabella, Isabelle, Lisa, Lisette","Edmond, Edmund, Felicia, Felicity, Felix","Elvira, Rex, Rhiannon, Soledad, ","Cecelia, Cecil, Cecile, Cecilia, Murray, Shayla, Sheila, Shelia","Bud, Buddy, Cheyenne, Dakota, Savanna, Savannah","Aurora, Kigan",
+						 "Caitlin, Caitlyn, Cate, Catherine, Cathy, Caryn, Jamal, Karen, Kari, Kate, Katharine, Kathleen, Kaitlin, Kaitlyn, Katelynn, Katherine, Kathryn Kathy, Katie, Katya, Trina","Asia, Fern, Keith","Erin, Keegan","Penny, Scott","Troy, Kay",
+						 "Andre, Andrea, Andreas, Andres, Andrew, Andy, Deandre, Drew",
+						 "Aaliah, Aaron, Aliyah, Aron","Pam, Pamela, Sebastian","Graham, Luther, Ora","Barbara, Barbra, Rodney","Nichole, Nico, Nicolas, Nicole, Nicholas, Nick, Nickolas, Nikki","Abel, Beckie, Becky, Reba, Rebeca, Rebecca, Rebekah",
+						 "Parker, Melba","Amory, Charis, Charise, Charissa, Charisse, Desmond, Elva","Pandora, Roman, Luz","Emma, Emmet, Emmett","Ariana, Ariane, Arianna, Arianne, Ken, Keneth, Kenny","Guadalupe, Joaquin, Lupe",
+						 "Efrain, Lucia, Lucile, Lucille, Lucinda, Lucy","Gordon, Ingrid","Corinne, Darwin","Aida, Dewitt, Garland","Britney, Brittany, Brittney, Bruce",
+						 "Harlan, Jenifer, Jenna, Jennie, Jennifer, Jenny","Dario, Darius, Jodi, Jodie, Jody, Jude, Judi, Judith, Libby","Dewayne, Dwayne, Ruth","Carlton, Ivy","Josh, Joshua, Josue, Leanne","Addison, Jared, Jarred, Jarrod, Jerred, Jerrod, Tory",
+						 "Adam, Eva, Eve","Jesus","Esteban, Estefania, Noel, Stefan, Stefanie, Stephan, Stephanie, Stephany,  Stephen, Steve, Steven","Goldie, Lamont","Burton, Cassie","Abby, Abigail, Gail, Gayle, Tyson",
+						 "Dave, David, Davis, Dawson, Dewey, Kali","Silvester, Geneva, Genevieve");
+dniVMesiaci = new Array(31,29,31,30,31,30,31,31,30,31,30,31);
+kalendarIndex = 0;
+for(i=0;i<(mesiac-1);i++) kalendarIndex+= dniVMesiaci[i];
+kalendarIndex+= (den-1);
+if((kalendarIndex - 255) >= 0 )
+  document.write("" +kalendar2[kalendarIndex-255]);
+else 
+  document.write("" +kalendar1[kalendarIndex]);
+// -->
+      
+</script>
+             
+
+
+
+
+
+
+</font>
+
+<br><br>
+<IMG src="foto/crazy.gif" width="90" height="20">
+<br>
+	
+
+<bgsound src="gb.mid" loop="-1">
+
+</CENTER>  	
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font color=white>
+//<bgsound src="gb.mid" loop="-1">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font face="webdings" color=black size=1>
+  </BODY>
+</HTML>

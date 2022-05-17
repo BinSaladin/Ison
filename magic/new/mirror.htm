@@ -1,0 +1,151 @@
+<HTML><HEAD><TITLE>HOME PAGE OF PETR JOSIFEK</TITLE>
+</HEAD>
+<BODY BACKGROUND="back.gif" TEXT="red" LINK="#007700">
+<BR><FONT size="4"><CENTER><FONT COLOR="black">
+
+
+<BR><HR><BR><FONT size="6"><CENTER><FONT COLOR="black">
+
+Lights
+
+<BR><HR><BR>
+
+
+
+
+
+
+
+
+
+
+
+<div align="center">
+<center>
+<table cellspacing="10" width="532" align="center" border="0">
+<tr>
+<td id="scriptfx" style="filter:Light(enabled=1); WIDTH: 640px" align="middle" width="480" bgcolor="#FEFEFE">
+<p align="center">&nbsp;</p>
+<p><img border="0" src="foto/japan2008a.jpg" width="640" height="480"></td>
+</tr>
+</table>
+</center>
+</div>
+
+
+<script language="JavaScript">
+var g_numlights = 0;
+
+window.onload = setlights;
+document.onclick=keyhandler;
+scriptfx.onmousemove=mousehandler;
+function setlights(){
+scriptfx.filters[0].clear();
+scriptfx.filters[0].addcone(0,250,5,100,100,255,0,0,60,10);
+if(g_numlights>0){
+scriptfx.filters[0].addcone(200,0,5,100,0,0,255,0,60,10);
+if(g_numlights>1){
+scriptfx.filters[0].addcone(200,300,5,100,0,204,0,204,60,10);
+if(g_numlights>2){
+scriptfx.filters[0].addcone(0,0,5,100,50,204,100,102,50,10);
+if(g_numlights>3){
+scriptfx.filters[0].addcone(500,300,10,100,100,0,155,255,40,10);
+}
+}
+}
+}
+} 
+
+
+function keyhandler(){
+g_numlights = (g_numlights += 1)%5;
+
+setlights();
+}
+
+
+function mousehandler(){
+x = (window.event.x - 80);
+y = (window.event.y - 80);
+
+scriptfx.filters[0].movelight(0,x,y,5,1);
+if( g_numlights > 0 ){
+scriptfx.filters[0].movelight(1,x,y,5,1);
+if( g_numlights > 1 ){
+scriptfx.filters[0].movelight(2,x,y,5,1);
+if( g_numlights > 2 ){
+scriptfx.filters[0].movelight(3,x,y,5,1);
+if( g_numlights > 3 ){
+scriptfx.filters[0].movelight(4,x,y,5,1);
+}
+}
+}
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</CENTER>
+
+
+
+<BR><HR><BR><FONT COLOR="black"><FONT size="3">
+
+Do you want more lights? Click left-mouse!
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font face="webdings" color=black size=1>
+
+
+
+
+
+
+
+
+
+
+<!--Change following reflection image to your own-->
+<img id="reflect" src="foto/japan2008a.jpg">
+<br>
+<script language="JavaScript1.2">
+
+/*
+Image reflection script (Submitted by Savio, savio_d_souza@hotmail.com)
+Permission granted to Dynamic Drive to feature script in archive
+For full source, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+function f1(){
+setInterval("mdiv.filters.wave.phase+=10",100);
+}
+
+if (document.all){
+document.write('<img id=mdiv src="'+document.all.reflect.src+'" style="filter:wave(strength=3,freq=3,phase=0,lightstrength=30)  blur() flipv()">')
+window.onload=f1
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  </BODY>
+</HTML>

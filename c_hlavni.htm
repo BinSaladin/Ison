@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD>
+<title>xjosifek@yahoo.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</HEAD>
+
+
+<BODY  background="back.gif"  topmargin=0 leftmargin=0 TEXT="#000000"  LINK="#00008f" VLINK="#8F0000" ALINK="#8f0000" onLoad="startclock();">
+
+<CENTER><EM>
+<br>
+<font size=6><font color=red>Home page of Petr Jos&iacute;fek</font>
+<br>		
+<font color=green>xjosifek@yahoo.com<BR></font></EM>
+<IMG src="line.gif" width="600" height="1">
+<br> 
+<font face="Arial" color=#f00000 size=3>
+<I>Místní datum a čas:</I></font>
+<br><br> 
+			
+<SCRIPT>
+<!--  
+// Den v tydnu
+var now = new Date();
+var dName = now.getDay() + 1;
+
+if(dName==1) Day = "neděle";
+if(dName==2) Day = "pondělí";
+if(dName==3) Day = "úterý";
+if(dName==4) Day = "středa";
+if(dName==5) Day = "čtvrtek";
+if(dName==6) Day = "pátek";
+if(dName==7) Day = "sobota";
+
+
+// String to display current day in week.
+
+   var dayInWeek =(" "
+       + Day
+       + "    "
+      
+       );
+
+// Write date to page.
+
+document.open();
+document.write("<FONT FACE=Arial,Helvetica SIZE=3> <B>"+dayInWeek+"</B></FONT>");
+
+//  -->
+</SCRIPT>
+
+<br>
+
+<SCRIPT>
+<!--  
+// Dnesni datum
+var now = new Date();
+var pyear = now.getFullYear();
+var mName = now.getMonth() + 1;
+var dayNr = ((now.getDate()<10) ? "" : "")+ now.getDate();
+
+
+if(mName==1) Month="ledna";
+if(mName==2) Month="února";
+if(mName==3) Month="března";
+if(mName==4) Month="dubna";
+if(mName==5) Month="května";
+if(mName==6) Month="června";
+if(mName==7) Month="července";
+if(mName==8) Month="srpna";
+if(mName==9) Month="září";
+if(mName==10) Month="října";
+if(mName==11) Month="listopadu";
+if(mName==12) Month="prosince";
+
+// String to display current date.
+
+   var todaysDate =(" "
+       + dayNr
+       + "."
+       + " "
+       + Month
+       + " "
+       + pyear
+       );
+
+// Write date to page.
+
+document.open();
+document.write("<FONT FACE=Arial,Helvetica SIZE=3> <B>"+todaysDate+"</B></FONT>");
+//  -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript Applet -------------------
+var timerID = null;
+var timerRunning = false;
+
+function stopclock ()
+      {
+	if(timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+      }
+
+function startclock ()
+      {
+	// Make sure the clock is stopped
+	stopclock();
+	showtime();
+      }
+
+function showtime () {
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = ((hours < 10) ? " " : "") + hours;
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+	document.clock.face.value = timeValue;
+	
+	window.status = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+       }
+
+	function pushbutton1() {
+		alert("Hello my dear!");
+	}
+
+	function getname(str) {
+		alert("Hi, "+ str+"!");
+	}
+// -->
+</SCRIPT>
+
+<br><br>
+<FORM NAME="clock" onSubmit="0">
+		<DIV ALIGN=CENTER>
+<INPUT TYPE="text" NAME="face" SIZE=8 VALUE="<!--#exec cmd=" `date +%T`" echo n &gt;> </DIV></FORM>
+<br>
+<font color=red size=3>
+Dnes má svátek:
+<br><br>
+</font>
+<font color=darkblue size=5>
+
+
+
+
+
+              <script language="JavaScript">
+			<!--
+dnes = new Date();
+mesiac = dnes.getMonth()+1;
+den = dnes.getDate();
+
+kalendar1 = new Array(
+
+" Nový rok " , 
+" Karina " , 
+" Radmila " , 
+" Diana " , 
+" Dalimil " , 
+" Tři králové " , 
+" Vilma " , 
+" Čestmír " , 
+" Vladan " , 
+" Břetislav " , 
+" Bohdana " , 
+" Pravoslav " , 
+" Edita " , 
+" Radovan " , 
+" Alice " , 
+" Ctirad " , 
+" Drahoslav " , 
+" Vladislav " , 
+" Doubravka " , 
+" Ilona " , 
+" Běla " , 
+" Slavomír " , 
+" Zdeněk " , 
+" Milena " , 
+" Miloš " , 
+" Zora " , 
+" Ingrid " , 
+" Otýlie " , 
+" Zdislava " , 
+" Robin " , 
+" Marika " , 
+" Hynek " , 
+" Nela " , 
+" Blažej " , 
+" Jarmila " , 
+" Dobromila " , 
+" Vanda " , 
+" Veronika " , 
+" Milada " , 
+" Apolena " , 
+" Mojmír " , 
+" Božena " , 
+" Slavěna " , 
+" Věnceslav " , 
+" Valentýn " , 
+" Jiřina " , 
+" Ljuba " , 
+" Miloslava " , 
+" Gizela " , 
+" Patrik " , 
+" Oldřich " , 
+" Lenka " , 
+" Petr " , 
+" Svatopluk " , 
+" Matěj " , 
+" Liliana " , 
+" Dorota " , 
+" Alexandr " , 
+" Lumír " , 
+" Horymír " , 
+" Bedřich " , 
+" Anežka " , 
+" Kamil " , 
+" Stela " , 
+" Kazimir " , 
+" Miroslav " , 
+" Tomáš " , 
+" Gabriela " , 
+" Františka " , 
+" Viktorie " , 
+" Anděla " , 
+" Řehoř " , 
+" Růžena " , 
+" Růt a matylda " , 
+" Ida " , 
+" Elena a herbert " , 
+" Vlastimil " , 
+" Eduard " , 
+" Josef " , 
+" Světlana " , 
+" Radek " , 
+" Leona " , 
+" Ivona " , 
+" Gabriel " , 
+" Marian " , 
+" Emanuel " , 
+" Dita " , 
+" Soňa " , 
+" Taťána " , 
+" Arnošt " , 
+" Kvido " , 
+" Hugo " , 
+" Erika " , 
+" Richard " , 
+" Ivana " , 
+" Miroslava " , 
+" Vendula " , 
+" Heřman a Hermína " , 
+" Ema " , 
+" Dušan " , 
+" Darja " , 
+" Izabela " , 
+" Julius " , 
+" Aleš " , 
+" Vincenc " , 
+" Anastázie " , 
+" Irena " , 
+" Rudolf " , 
+" Valérie " , 
+" Rostislav " , 
+" Marcela " , 
+" Alexandra " , 
+" Evženie " , 
+" Vojtěch " , 
+" Jiří " , 
+" Marek " , 
+" Oto " , 
+" Jaroslav " , 
+" Vlastislav " , 
+" Robert " , 
+" Blahoslav " , 
+" práce " , 
+" Zikmund " , 
+" Alexej " , 
+" Květoslav " , 
+" Klaudie " , 
+" Radoslav " , 
+" Stanislav " , 
+" Den osvobození " , 
+" Ctibor " , 
+" Blažena " , 
+" Svatava " , 
+" Pankrác " , 
+" Servác " , 
+" Bonifác " , 
+" Žofie " , 
+" Přemysl " , 
+" Aneta " , 
+" Nataša " , 
+" Ivo " , 
+" Zbyšek " , 
+" Monika " , 
+" Emil " , 
+" Vladimír " , 
+" Jana " , 
+" Viola " , 
+" Filip " , 
+" Valdemar " , 
+" Vilém " , 
+" Maxmilián " , 
+" Ferdinand " , 
+" Kamila " , 
+" Laura " , 
+" Jarmil " , 
+" Tamara " , 
+" Dalibor " , 
+" Dobroslav " , 
+" Norbert " , 
+" Iveta a Slavoj " , 
+" Medard " , 
+" Stanislava " , 
+" Gita " , 
+" Bruno " , 
+" Antonie " , 
+" Antonín " , 
+" Roland " , 
+" Vít " , 
+" Zbyněk " , 
+" Adolf " , 
+" Milan " , 
+" Leoš " , 
+" Květa " , 
+" Alois " , 
+" Pavla " , 
+" Zdeňka " , 
+" Jan " , 
+" Ivan " , 
+" Adriana " , 
+" Ladislav " , 
+" Lubomír " , 
+" Petr a Pavel " , 
+" Šárka " , 
+" Jaroslava " , 
+" Patricie " , 
+" Radomír " , 
+" Prokop " , 
+" Cyril a Metoděj " , 
+" Upálení Jana Husa " , 
+" Bohuslava " , 
+" Nora " , 
+" Drahoslava " , 
+" Libuše a Amálie " , 
+" Olga " , 
+" Bořek " , 
+" Markéta " , 
+" Karolína " , 
+" Jindřich " , 
+" Luboš " , 
+" Martina " , 
+" Drahomíra " , 
+" Čeněk " , 
+" Ilja " , 
+" Vítězslav " , 
+" Magdaléna " , 
+" Libor " , 
+" Kristýna " , 
+" Jakub " , 
+" Anna " , 
+" Věroslav " , 
+" Viktor " , 
+" Marta " , 
+" Bořivoj " , 
+" Ignác " , 
+" Oskar " , 
+" Gustav " , 
+" Miluše " , 
+" Dominik " , 
+" Kristian " , 
+" Oldřiška " , 
+" Lada " , 
+" Soběslav " , 
+" Roman " , 
+" Vavřinec " , 
+" Zuzana " , 
+" Klára " , 
+" Alena " , 
+" Alan " , 
+" Hana " , 
+" Jáchym " , 
+" Petra " , 
+" Helena " , 
+" Ludvík " , 
+" Bernard " , 
+" Johana " , 
+" Bohuslav " , 
+" Sandra " , 
+" Bartoloměj " , 
+" Radim " , 
+" Luděk " , 
+" Otakar " , 
+" Augustýn " , 
+" Evelína " , 
+" Vladěna " , 
+" Pavlína " , 
+" Linda a Samuel " , 
+" Adéla " , 
+" Bronislav " , 
+" Jindřiška " , 
+" Boris " , 
+" Boleslav " , 
+" Regína " , 
+" Mariana " , 
+" Daniela " , 
+" Irma " , 
+" Denisa " , 
+" Marie " , 
+" Lubor " , 
+" Radka " , 
+" Jolana " , 
+" Ludmila " , 
+" Naděžda " , 
+" Kryštof " , 
+" Zita " , 
+" Oleg " , 
+" Matouš " , 
+" Darina " , 
+" Berta " , 
+" Jaromír " , 
+" Zlata " , 
+" Andrea " , 
+" Jonáš " , 
+" Václav " , 
+" Michal " , 
+" Jeroným " , 
+" Igor " , 
+" Olivie a Oliver " , 
+" Bohumil " , 
+" František " , 
+" Eliška " , 
+" Hanuš " , 
+" Justýna " , 
+" Věra " , 
+" Štefan a Sára " , 
+" Marina " , 
+" Andrej " , 
+" Marcel " , 
+" Renáta " , 
+" Agáta " , 
+" Tereza " , 
+" Havel " , 
+" Hedvika " , 
+" Lukáš " , 
+" Michaela " , 
+" Vendelín " , 
+" Brigita " , 
+" Sabina " , 
+" Teodor " , 
+" Nina " , 
+" Beáta " , 
+" Erik " , 
+" Šarlota a Zoe " , 
+" Vznik Československa " , 
+" Silvie " , 
+" Tadeáš " , 
+" Štěpánka " , 
+" Felix " , 
+" Památka zesnulých " , 
+" Hubert " , 
+" Karel " , 
+" Miriam " , 
+" Liběna " , 
+" Saskie " , 
+" Bohumír " , 
+" Bohdan " , 
+" Evžen " , 
+" Martin " , 
+" Benedikt " , 
+" Tibor " , 
+" Sáva " , 
+" Leopold " , 
+" Otmar " , 
+" Mahulena " , 
+" Romana " , 
+" Alžběta " , 
+" Nikola " , 
+" Albert " , 
+" Cecílie " , 
+" Klement " , 
+" Emílie " , 
+" Kateřina " , 
+" Artur " , 
+" Xenie " , 
+" René " , 
+" Zina " , 
+" Ondřej " , 
+" Iva " , 
+" Blanka " , 
+" Svatoslav " , 
+" Barbora " , 
+" Jitka " , 
+" Mikuláš " , 
+" Ambrož a Benjamín " , 
+" Květoslava " , 
+" Vratislav " , 
+" Julie " , 
+" Dana " , 
+" Simona " , 
+" Lucie " , 
+" Lýdie " , 
+" Radana a Radan " , 
+" Albína " , 
+" Daniel " , 
+" Miloslav " , 
+" Ester " , 
+" Dagmar " , 
+" Natálie " , 
+" Šimon " , 
+" Vlasta " , 
+" Adam a Eva " , 
+" 1.svátek vánoční " , 
+" Štěpán " , 
+" Žaneta " , 
+" Bohumila " , 
+" Judita " , 
+" David " , 
+" Silvestr " 
+
+
+);
+
+dniVMesiaci = new Array(31,29,31,30,31,30,31,31,30,31,30,31);
+kalendarIndex = 0;
+for(i=0;i<(mesiac-1);i++) kalendarIndex+= dniVMesiaci[i];
+kalendarIndex+= (den-1);
+if((kalendarIndex - 255) >= 0 )
+  document.write("" +kalendar2[kalendarIndex-255]);
+else 
+  document.write("" +kalendar1[kalendarIndex]);
+// -->
+      
+</script>
+             
+
+
+
+
+
+
+</font>
+
+<br><br>
+<IMG src="foto/crazy.gif" width="90" height="20">
+<br>
+
+</CENTER>  	
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<bgsound src="cz.mid" loop="-1">
+
+<font color=white>
+//
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font face="webdings" color=black size=1>
+  </BODY>
+</HTML>
+
+
+
+

@@ -1,0 +1,19 @@
+﻿// START
+<SCRIPT LANGUAGE="JavaScript">
+
+function ShowEffect(Im1) { 
+
+Im1.filters.Light.addPoint(110,7,60,255,0,255,100);
+Im1.filters.Light.addPoint(50,139,60,255,50,255,100);
+Im1.filters.Light.addPoint(7,6,60,0,255,0,100); 
+Im1.filters.Light.addPoint(300,136,60,255,255,0,100);
+Im1.filters.Light.addPoint(115,117,50,255,255,0,100);
+Im1.filters.Light.addPoint(300,7,50,255,255,0,100);
+Im1.filters.Light.addPoint(150,7,50,255,255,0,100);
+Im1.filters.Light.addPoint(150,30,50,255,255,0,100);
+Im1.filters.Light.addPoint(200,30,50,255,255,0,100);
+Im1.filters.Light.addCone(90,150,50,100,100,255,0,0,60,15);}
+window.onload = new Function("ShowEffect(document.all.demo)")
+</SCRIPT>
+<img id="demo" style="filter:Light()" src="a_photo.gif" alt="scriptfx logo" align="center" width="360" height="138">
+//END

@@ -1,0 +1,103 @@
+
+<body bgcolor="#ffffff" link="#6633cc" vlink="#996600" text="#000000" background="backu.gif"  topmargin=0 leftmargin=0>
+
+<BODY  TEXT="#000000"  LINK="#00008f" VLINK="#8F0000" ALINK="#8f0000" 
+onLoad="startclock();">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript Applet -------------------
+var timerID = null;
+var timerRunning = false;
+
+function stopclock ()
+      {
+	if(timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+      }
+
+function startclock ()
+      {
+	// Make sure the clock is stopped
+	stopclock();
+	showtime();
+      }
+
+function showtime () {
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = ((hours < 10) ? " " : "") + hours;
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+	document.clock.face.value = timeValue;
+	// you could replace the above with this
+	// and have a clock on the status bar:
+	// window.status = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+       }
+
+	function pushbutton1() {
+		alert("Hello my dear!");
+	}
+
+	function getname(str) {
+		alert("Hi, "+ str+"!");
+	}
+// -->
+</SCRIPT>
+<P ALIGN=CENTER>
+		<FORM NAME="clock" onSubmit="0">
+		<DIV ALIGN=CENTER>
+
+<font size=5 color=green>Web pages of Petr Josífek </font>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="text" NAME="face" SIZE=8 VALUE="<!--#exec cmd="echo -n `date +%T`" --&gt;> &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<font size=5 color=red>xjosifek@yahoo.com </font>
+
+	</DIV></FORM>
+<br>
+</CENTER>  	</TABLE>
+<script LANGUAGE="JavaScript">
+<!--
+// Scrolling message settings
+var MessageText = "     ...     Petr Josífek     ...    Glasgow     ...     "
+var DisplayLength = 130
+var pos = 1 - DisplayLength;
+function ScrollInStatusBar(){
+var scroll = "";
+pos++;
+if (pos == MessageText.length) pos = 1 - DisplayLength;
+if (pos<0)
+  {
+for (var i=1; i<=Math.abs(pos); i++)
+scroll = scroll + " ";
+    scroll = scroll + MessageText.substring(0, DisplayLength - i + 1);
+  }
+else
+    scroll = scroll + MessageText.substring(pos, pos + DisplayLength);
+window.status = scroll;
+//Scrolling speed
+setTimeout("ScrollInStatusBar()",80);
+}
+
+ScrollInStatusBar()
+//-->
+</script>
+</head>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font face="webdings" color=black size=1>
+  </BODY>
+</HTML>
+
+
+

@@ -1,0 +1,190 @@
+
+<body bgcolor="#ffffff" link="#6633cc" vlink="#996600" text="#000000" background="backu.gif"  topmargin=0 leftmargin=0>
+
+<BODY  TEXT="#000000"  LINK="#00008f" VLINK="#8F0000" ALINK="#8f0000" 
+onLoad="startclock();">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript Applet -------------------
+var timerID = null;
+var timerRunning = false;
+
+function stopclock ()
+      {
+	if(timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+      }
+
+function startclock ()
+      {
+	// Make sure the clock is stopped
+	stopclock();
+	showtime();
+      }
+
+function showtime () {
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = ((hours < 10) ? " " : "") + hours;
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+	document.clock.face.value = timeValue;
+	// you could replace the above with this
+	// and have a clock on the status bar:
+	// window.status = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+       }
+
+	function pushbutton1() {
+		alert("Hello my dear!");
+	}
+
+	function getname(str) {
+		alert("Hi, "+ str+"!");
+	}
+// -->
+</SCRIPT>
+
+
+
+
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+msg='Welcome to websites of Petr Igarashi Josifek';
+font='Enviro';
+size=2; // 1-7 only!
+color='#ef000f';
+speed=0.5;
+
+//Alter nothing past here!!
+ns=(document.layers);
+ie=(document.all);
+msg=msg.split('');
+n=msg.length;
+a=size*10;
+ymouse=0;
+xmouse=0;
+scrll=0;
+props="<font face="+font+" size="+size+" color="+color+">";
+if (ns){
+for (i=0; i < n; i++)
+document.write('<layer name="nsmsg'+i+'" top=0 left=0 height='+a+' width='+a+'><center>'+props+msg[i]+'</font></center></layer>');
+}
+if (ie){
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < n; i++)
+document.write('<div id="iemsg" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center">'+props+msg[i]+'</font></div>');
+document.write('</div></div>');
+}
+(ns)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+ymouse = (ns)?evnt.pageY+20-(window.pageYOffset):event.y+20;
+xmouse = (ns)?evnt.pageX+20:event.x+20;
+}
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+y=new Array();
+x=new Array();
+Y=new Array();
+X=new Array();
+for (i=0; i < n; i++){
+y[i]=0;
+x[i]=0;
+Y[i]=0;
+X[i]=0;
+}
+function assign(){
+if (ie) outer.style.top=document.body.scrollTop;
+for (i=0; i < n; i++){
+ var d=(ns)?document.layers['nsmsg'+i]:iemsg[i].style;
+ d.top=y[i]+scrll;
+ d.left=x[i]+(i*(a/2));
+ }
+}
+function ripple(){
+scrll=(ns)?window.pageYOffset:0;
+y[0]=Math.round(Y[0]+=((ymouse)-Y[0])*speed);
+x[0]=Math.round(X[0]+=((xmouse)-X[0])*speed);
+for (var i=1; i < n; i++){
+y[i]=Math.round(Y[i]+=(y[i-1]-Y[i])*speed);
+x[i]=Math.round(X[i]+=(x[i-1]-X[i])*speed);
+}
+assign();
+setTimeout('ripple()',10);
+}
+if (ns||ie)window.onload=ripple;
+//  End -->
+</script>
+
+
+
+
+
+
+
+
+
+
+<P ALIGN=CENTER>
+		<FORM NAME="clock" onSubmit="0">
+		<DIV ALIGN=CENTER>
+
+<font size=5 color=green>Web pages of Petr Igarashi Josífek </font>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="text" NAME="face" SIZE=8 VALUE="<!--#exec cmd="echo -n `date +%T`" --&gt;> &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<font size=5 color=red>xjosifek@yahoo.com </font>
+
+	</DIV></FORM>
+<br>
+</CENTER>  	</TABLE>
+<script LANGUAGE="JavaScript">
+<!--
+// Scrolling message settings
+var MessageText = "     ...     Petr Josífek     ...    Glasgow     ...     "
+var DisplayLength = 130
+var pos = 1 - DisplayLength;
+function ScrollInStatusBar(){
+var scroll = "";
+pos++;
+if (pos == MessageText.length) pos = 1 - DisplayLength;
+if (pos<0)
+  {
+for (var i=1; i<=Math.abs(pos); i++)
+scroll = scroll + " ";
+    scroll = scroll + MessageText.substring(0, DisplayLength - i + 1);
+  }
+else
+    scroll = scroll + MessageText.substring(pos, pos + DisplayLength);
+window.status = scroll;
+//Scrolling speed
+setTimeout("ScrollInStatusBar()",80);
+}
+
+ScrollInStatusBar()
+//-->
+</script>
+</head>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<font face="webdings" color=black size=1>
+  </BODY>
+</HTML>
+
+
+
